@@ -70,7 +70,7 @@ from ultralytics import YOLO
 model = YOLO("yolo11n-cls.pt")
 
 # Perform object detection on an image
-results = model("runs/detect/test1.jpeg", save  = True)
+results = model("/content/runs/detect/test1.jpeg", save  = True)
 results[0].show()
 
 from ultralytics import YOLO

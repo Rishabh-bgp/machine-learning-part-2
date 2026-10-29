@@ -41,7 +41,7 @@ We loaded a pre-trained **YOLO11 Nano Classification model (`yolo11n-cls.pt`)** 
 ---
 
 ## 🔍 Step 4: Inference & Prediction
-We loaded the best-performing weights (`runs/classify/train/weights/best.pt`) and ran model predictions on sample validation images. The model was able to confidently distinguish the disease classifications with near 100% confidence scores.
+We loaded the best-performing weights (`/content/runs/classify/train/weights/best.pt`) and ran model predictions on sample validation images. The model was able to confidently distinguish the disease classifications with near 100% confidence scores.
 
 ---
 
@@ -161,7 +161,7 @@ import os
 import glob
 
 # Load your custom trained model weights
-trained_model = YOLO('runs/classify/train/weights/best.pt')
+trained_model = YOLO('/content/runs/classify/train/weights/best.pt')
 
 # Dynamically search all validation subdirectories for an image
 val_images = glob.glob('potato_dataset/val/**/*.*', recursive=True)
@@ -193,12 +193,12 @@ else:
 from IPython.display import Image, display
 import os
 
-results_png_path = 'runs/classify/train/results.png'
+results_png_path = '/content/runs/classify/train/results.png'
 
 if os.path.exists(results_png_path):
     print("Displaying training loss and accuracy graphs:")
     display(Image(filename=results_png_path))
 else:
     print(f"Could not find results image at {results_png_path}. Let's check the contents of the run directory:")
-    if os.path.exists('runs/classify/train'):
-        print(os.listdir('runs/classify/train'))
+    if os.path.exists('/content/runs/classify/train'):
+        print(os.listdir('/content/runs/classify/train'))
