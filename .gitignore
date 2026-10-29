@@ -10,3 +10,7 @@ potato_dataset/
 *.png
 .env
 kaggle.json
+
+# keep README gallery images
+!docs/outputs/
+!docs/outputs/*
