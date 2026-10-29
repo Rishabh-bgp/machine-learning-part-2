@@ -14,3 +14,7 @@ kaggle.json
 # keep README gallery images
 !docs/outputs/
 !docs/outputs/*
+
+# fresh-run results (images, videos, notebooks)
+!results/
+!results/**

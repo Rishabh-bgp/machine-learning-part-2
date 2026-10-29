@@ -110,3 +110,26 @@ requirements.txt  LICENSE  README.md
 
 ## 📄 License
 [MIT](LICENSE) © 2026 Rishabh Aryan. The dataset belongs to its Kaggle authors; YOLO11 is by Ultralytics (AGPL-3.0).
+
+## Results from a fresh run
+
+All files were re-run on 30 Oct 2026 (IST) – see [results/RESULTS.md](results/RESULTS.md) for the numbers. Potato classifier: **99.77 % top-1** after 5 epochs (original: 99.5 %).
+
+Videos: [detection](results/videos/detect_test.mp4) · [pose](results/videos/pose_test.mp4) · [oriented boxes](results/videos/obb_test.mp4)
+
+### YOLO11 tasks
+
+<table>
+<tr><td align="center"><img src="results/images/classify_test.jpg" width="260" alt="classify_test.jpg"><br><sub>classify_test.jpg</sub></td><td align="center"><img src="results/images/classify_test1.jpg" width="260" alt="classify_test1.jpg"><br><sub>classify_test1.jpg</sub></td><td align="center"><img src="results/images/detect_test.jpg" width="260" alt="detect_test.jpg"><br><sub>detect_test.jpg</sub></td></tr>
+<tr><td align="center"><img src="results/images/pose_test.jpg" width="260" alt="pose_test.jpg"><br><sub>pose_test.jpg</sub></td><td align="center"><img src="results/images/segment_test.jpg" width="260" alt="segment_test.jpg"><br><sub>segment_test.jpg</sub></td></tr>
+</table>
+
+### Potato classifier training
+
+<table>
+<tr><td align="center"><img src="results/training/confusion_matrix.png" width="260" alt="confusion_matrix.png"><br><sub>confusion_matrix.png</sub></td><td align="center"><img src="results/training/confusion_matrix_normalized.png" width="260" alt="confusion_matrix_normalized.png"><br><sub>confusion_matrix_normalized.png</sub></td><td align="center"><img src="results/training/results.png" width="260" alt="results.png"><br><sub>results.png</sub></td></tr>
+<tr><td align="center"><img src="results/training/train_batch0.jpg" width="260" alt="train_batch0.jpg"><br><sub>train_batch0.jpg</sub></td><td align="center"><img src="results/training/train_batch1.jpg" width="260" alt="train_batch1.jpg"><br><sub>train_batch1.jpg</sub></td><td align="center"><img src="results/training/train_batch2.jpg" width="260" alt="train_batch2.jpg"><br><sub>train_batch2.jpg</sub></td></tr>
+<tr><td align="center"><img src="results/training/val_batch0_labels.jpg" width="260" alt="val_batch0_labels.jpg"><br><sub>val_batch0_labels.jpg</sub></td><td align="center"><img src="results/training/val_batch0_pred.jpg" width="260" alt="val_batch0_pred.jpg"><br><sub>val_batch0_pred.jpg</sub></td><td align="center"><img src="results/training/val_batch1_labels.jpg" width="260" alt="val_batch1_labels.jpg"><br><sub>val_batch1_labels.jpg</sub></td></tr>
+<tr><td align="center"><img src="results/training/val_batch1_pred.jpg" width="260" alt="val_batch1_pred.jpg"><br><sub>val_batch1_pred.jpg</sub></td><td align="center"><img src="results/training/val_batch2_labels.jpg" width="260" alt="val_batch2_labels.jpg"><br><sub>val_batch2_labels.jpg</sub></td><td align="center"><img src="results/training/val_batch2_pred.jpg" width="260" alt="val_batch2_pred.jpg"><br><sub>val_batch2_pred.jpg</sub></td></tr>
+</table>
+
