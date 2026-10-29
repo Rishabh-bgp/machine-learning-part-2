@@ -53,6 +53,32 @@ A sample Early Blight validation leaf was predicted as Early_Blight 100.00%, Hea
 | Classification (image) | `yolo11n-cls` | ImageNet top-1: shoe_shop 0.31 |
 | Oriented boxes (video) | `yolo11n-obb` | no detections (DOTA aerial classes) |
 
+## 🖼️ Output gallery
+
+Outputs saved from the executed notebooks (in [`docs/outputs/`](docs/outputs/)).
+
+<table>
+  <tr>
+    <td align="center" width="50%"><img src="docs/outputs/detection.jpg" alt="Object detection" width="100%"><br><sub>Object detection — <code>yolo11n</code> on <code>test.jpeg</code></sub></td>
+    <td align="center" width="50%"><img src="docs/outputs/detection_video.jpg" alt="Object detection" width="100%"><br><sub>Object detection — <code>yolo11n</code> on a <code>test.mp4</code> frame</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="docs/outputs/segmentation.jpg" alt="Instance segmentation" width="100%"><br><sub>Instance segmentation — <code>yolo11n-seg</code></sub></td>
+    <td align="center" width="50%"><img src="docs/outputs/pose.jpg" alt="Pose estimation" width="100%"><br><sub>Pose estimation — <code>yolo11n-pose</code> on <code>test.jpeg</code></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="docs/outputs/pose_video.jpg" alt="Pose estimation" width="100%"><br><sub>Pose estimation — <code>yolo11n-pose</code> on a <code>test.mp4</code> frame</sub></td>
+    <td align="center" width="50%"><img src="docs/outputs/classification.jpg" alt="Image classification" width="100%"><br><sub>Image classification — <code>yolo11n-cls</code> on <code>test.jpeg</code></sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="docs/outputs/classification_test1.jpg" alt="Image classification" width="100%"><br><sub>Image classification — <code>yolo11n-cls</code> on <code>test1.jpeg</code></sub></td>
+    <td align="center" width="50%"><img src="docs/outputs/obb_video.jpg" alt="Oriented bounding boxes" width="100%"><br><sub>Oriented bounding boxes — <code>yolo11n-obb</code> on a <code>test.mp4</code> frame</sub></td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="docs/outputs/training_curves.png" alt="Potato leaf disease classifier" width="100%"><br><sub>Potato leaf disease classifier — training curves (5 epochs)</sub></td>
+  </tr>
+</table>
+
 ## 🗂️ Data
 Nothing is bundled. Notebook 2 downloads the [Kaggle potato dataset](https://www.kaggle.com/datasets/faysalmiah1721758/potato-dataset)
 (about 38 MB) with `kagglehub` at run time. Notebook 1 expects your own `test.jpeg` and `test.mp4` in the working folder;
@@ -73,6 +99,7 @@ Pretrained YOLO11 weights download automatically on first use. Kaggle downloads 
 ```
 notebooks/   executed Jupyter notebooks
 scripts/     plain-Python exports of the notebooks (Colab "!pip" lines included)
+docs/outputs/ output images extracted from the notebooks
 requirements.txt  LICENSE  README.md
 ```
 
