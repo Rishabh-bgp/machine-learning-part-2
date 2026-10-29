@@ -1,0 +1,12 @@
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+runs/
+potato_dataset/
+*.pt
+*.mp4
+*.jpeg
+*.jpg
+*.png
+.env
+kaggle.json
