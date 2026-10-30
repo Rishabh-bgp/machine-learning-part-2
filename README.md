@@ -16,7 +16,7 @@ by an end-to-end **transfer-learning project** that fine-tunes `yolo11n-cls` to 
 (Early Blight, Late Blight, Healthy).
 
 > Practice work by **Rishabh Aryan** for the **6-Month Industrial Training & Certification Program in Artificial Intelligence and Machine Learning**, jointly offered by [IIT Ropar](https://www.iitrpr.ac.in/) and [NIELIT Ropar](https://www.nielit.gov.in/ropar/), under MeitY, Govt. of India.
-> Previous part: [Machine Learning Part 1](https://github.com/Rishabh-bgp/machine-learning-part-1).
+> Previous part: [Machine Learning Part 1](https://github.com/Rishabh-bgp/machine-learning-part-1) · Next part: [Machine Learning Part 3 — road damage detection](https://github.com/Rishabh-bgp/machine-learning-part-3).
 
 ---
 
@@ -105,6 +105,7 @@ requirements.txt  LICENSE  README.md
 
 ## 🔗 Other repositories
 - [Machine Learning Part 1](https://github.com/Rishabh-bgp/machine-learning-part-1)
+- [Machine Learning Part 3 — road damage detection](https://github.com/Rishabh-bgp/machine-learning-part-3) · [live demo](https://rishabh-bgp.github.io/machine-learning-part-3/)
 - [NIELIT Machine Learning Projects](https://github.com/Rishabh-bgp/NIELIT-MACHINE-LEARNING-PROJECTS)
 - [All repositories](https://github.com/Rishabh-bgp?tab=repositories)
 
